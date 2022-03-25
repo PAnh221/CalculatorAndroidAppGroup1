@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--    Dùng GridLayout để chứa các đối tượng-->
+    <!--    layout_width    : chiều rộng của Layout, để math_parent để chiều rộng = với màn hình-->
+    <!--    layout_heigh    : chiều cao của Layout, để wrap_content để chiều cao = với nội dung của chúng ta-->
+    <!--    columnCount     : số cột của Layout-->
+    <!--    rowCount        : số hàng của Layout-->
+    <!--    Vì ứng dụng của chúng ta có 4 cột 5 hàng nên ta set columnCount=4, và rowCount = 5-->
+    <!--    Nhã - 23:20/12/3/2022-->
+
+    <!--    Gravity         : giống float trong CSS-->
+    <!--    textColor       : màu chữ-->
+    <!--    text            : chữ hiển thị-->
+    <!--    textSize        : kích cỡ của chữ-->
+    <!--    layout_row      : index hàng của đối tượng, bắt đầu từ 0-->
+    <!--    layout_column   : index cột của đối tượng, bắt đầu từ 0-->
+    <!--    fontFamily      : font chữ-->
+    <!--    Nhã - 23:30/12/3/2022-->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="5">
+
+<!--        Em tạo ra 1 button đại diện và copy paste để tạo các button còn lại-->
+<!--        Button có các thuộc tính layout_row và layout_column chính là
+            vị trí index trong mảng 2 chiều 5x4 ta đã tạo ở Layout trên-->
+<!--        Các thuộc tính còn lại như chú thích ở trên của em-->
+<!--        Nhã - 23:36/12/3/2022-->
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:background="@color/colorNumber"
+            app:backgroundTint="@color/colorNumber"
+            android:fontFamily="monospace"
+            android:text="7"
+            android:textColor="@color/black"
+            android:textSize="30sp"></Button>
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:background="@color/colorNumber"
+            app:backgroundTint="@color/colorNumber"
+            android:fontFamily="monospace"
+            android:text="8"
+            android:textColor="@color/black"
+            android:textSize="30sp"></Button>
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:background="@color/colorNumber"
+            app:backgroundTint="@color/colorNumber"
+            android:fontFamily="monospace"
+            android:text="9"
+            android:textColor="@color/black"
+            android:textSize="30sp"></Button>
+
+        <Button
+            android:id="@+id/btnChia"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:background="@color/orange"
+            android:fontFamily="monospace"
+            android:text="%"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:backgroundTint="@color/orange"></Button>
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:background="@color/colorNumber"
+            app:backgroundTint="@color/colorNumber"
+            android:fontFamily="monospace"
+            android:text="4"
+            android:textColor="@color/black"
+            android:textSize="30sp"></Button>
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:background="@color/colorNumber"
+            app:backgroundTint="@color/colorNumber"
+            android:fontFamily="monospace"
+            android:text="5"
+            android:textColor="@color/black"
+            android:textSize="30sp"></Button>
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:background="@color/colorNumber"
+            app:backgroundTint="@color/colorNumber"
+            android:fontFamily="monospace"
+            android:text="6"
+            android:textColor="@color/black"
+            android:textSize="30sp"></Button>
+
+        <Button
+            android:id="@+id/btnNhan"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:background="@color/orange"
+            android:fontFamily="monospace"
+            android:text="*"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:backgroundTint="@color/orange"></Button>
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:background="@color/colorNumber"
+            app:backgroundTint="@color/colorNumber"
+            android:fontFamily="monospace"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="30sp"></Button>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:background="@color/colorNumber"
+            app:backgroundTint="@color/colorNumber"
+            android:fontFamily="monospace"
+            android:text="2"
+            android:textColor="@color/black"
+            android:textSize="30sp"></Button>
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:background="@color/colorNumber"
+            app:backgroundTint="@color/colorNumber"
+            android:fontFamily="monospace"
+            android:text="3"
+            android:textColor="@color/black"
+            android:textSize="30sp"></Button>
+
+        <Button
+            android:id="@+id/btnTru"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:background="@color/orange"
+            android:fontFamily="monospace"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:backgroundTint="@color/orange"></Button>
+
+        <!--        layout_columnSpan   : chiều rộng chiếm bao nhiêu cột, mặc định là 1.
+                                          Vì ta thấy số 0 chiếm 2 cột nên ta set columnspan = 2-->
+        <!--        Nhã - 00:20/13/3/2022-->
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="2"
+            android:background="@color/colorNumber"
+            android:fontFamily="monospace"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:backgroundTint="@color/colorNumber"></Button>
+
+        <Button
+            android:id="@+id/btnCham"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:background="@color/colorNumber"
+            app:backgroundTint="@color/colorNumber"
+            android:fontFamily="monospace"
+            android:text="."
+            android:textColor="@color/black"
+            android:textSize="30sp"></Button>
+
+        <Button
+            android:id="@+id/btnCong"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:background="@color/orange"
+            android:fontFamily="monospace"
+            android:text="+"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:backgroundTint="@color/orange"></Button>
+        <!--        Tạo 2 button "C" và "=" có độ rộng là 2 column (columnspan = 2)-->
+        <!--Thuộc tính backgroundTint tô màu nền cho button-->
+            <!--        Phi Anh - 00:25/15/3/2022-->
+        <Button
+            android:id="@+id/btnC"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="2"
+            android:background="@color/orange"
+            android:fontFamily="monospace"
+            android:text="C"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:backgroundTint="@color/orange"></Button>
+
+        <Button
+            android:id="@+id/btnBang"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="2"
+            android:background="@color/orange"
+            android:fontFamily="monospace"
+            android:text="="
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:backgroundTint="@color/orange"></Button>
+
+
+    </GridLayout>
+
+</RelativeLayout>

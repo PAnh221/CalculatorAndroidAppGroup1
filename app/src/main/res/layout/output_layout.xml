@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical">
+<!--Tạo TextView để hiển thị nội dung trên máy tính-->
+    <!--    gravity         : end để chữ hiển thị ra cuối-->
+    <!--    textColor       : màu chữ-->
+    <!--    text            : nội dung-->
+    <!--    textSize        : kích cỡ chữ-->
+    <!--    weightSum       : chia tổng layout thành 10 phần-->
+    <!--    background      : màu background của textView-->
+    <!--    fontFamily      : font chữ của textView-->
+    <!--    layout_height   : chiều cao của TextView-->
+<!--    Phi Anh - 00:47/15/3/2022-->
+    <TextView
+        android:id="@+id/textOutput"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:gravity="end"
+        android:text="0"
+        android:textSize="60sp"
+        android:textColor="@color/white"
+        android:background="@color/colorOutput"
+        android:fontFamily="monospace">
+    </TextView>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<!--        Ở trên là layout hiển thị output.
+            Em có giải thích code ở file output_layout.xml-->
+<!--        Nhã - 00:55/13/3/2022-->
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/output_layout" />
+        <!--        Ở dưới là layout hiển thị các nút bấm.
+                    Em có giải thích code ở file button_layout.xml-->
+        <!--        Nhã - 00:58/13/3/2022-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+                <include
+                    layout="@layout/button_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+        </RelativeLayout>
+</RelativeLayout>
